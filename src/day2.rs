@@ -35,7 +35,6 @@ fn part2_check(line_fields: &Vec<&str>) -> bool {
 fn main() {
     let file = File::open("input/day2.txt").unwrap();
     let reader = BufReader::new(file);
-    let vec: Vec<i32> = Vec::new();
     let mut part1_valid_cnt = 0;
     let mut part2_valid_cnt = 0;
     for line in reader.lines() {
@@ -55,9 +54,7 @@ fn main() {
             }
         } else {
             println!("WARNING empty line!")
-        }
-        // TODO part 2
-        
+        }      
     }
 
     println!("PART 1 - Final result = {}", part1_valid_cnt);
